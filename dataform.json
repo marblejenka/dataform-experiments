@@ -1,0 +1,7 @@
+{
+    "warehouse": "bigquery",
+    "defaultSchema": "dataform_initial",
+    "assertionSchema": "dataform_assertions",
+    "useRunCache": false,
+    "defaultLocation": "us-central1"
+}
