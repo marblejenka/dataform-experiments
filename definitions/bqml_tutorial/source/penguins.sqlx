@@ -2,5 +2,5 @@ config {
   type: "declaration",
   database: "bigquery-public-data",
   schema: "ml_datasets",
-  name: "penguins`",
+  name: "penguins",
 }
