@@ -7,7 +7,7 @@ js {
 }
 
 #standardSQL
-CREATE OR REPLACE MODEL `${self()}`
+CREATE OR REPLACE MODEL ${self()}
 OPTIONS
   (model_type='linear_reg',
   input_label_cols=['body_mass_g'],
