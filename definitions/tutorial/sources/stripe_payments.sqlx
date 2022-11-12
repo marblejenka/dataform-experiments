@@ -1,0 +1,8 @@
+config {
+  type: "declaration",
+  database: "dataform-demos",
+  schema: "dataform_tutorial",
+  name: "stripe_payments",
+  tags: ["source"],
+  description: "Raw CRM customers table"
+}

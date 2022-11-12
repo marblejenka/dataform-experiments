@@ -9,8 +9,8 @@ SELECT
   SUM(charges.amount) AS amount
 
 FROM
-  dataform-demos.dataform_tutorial.shopify_orders AS orders
-  LEFT JOIN dataform-demos.dataform_tutorial.stripe_payments AS charges
+  ${ref("shopify_orders")} AS orders
+  LEFT JOIN ${ref("stripe_payments")} AS charges
     ON orders.payment_id = charges.id
 
 WHERE
