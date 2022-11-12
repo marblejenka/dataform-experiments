@@ -1,0 +1,16 @@
+config { 
+  type: "table",
+}
+
+#standardSQL
+SELECT
+  *
+FROM
+  ML.EVALUATE(MODEL ${ref("penguins_model")},
+    (
+    SELECT
+      *
+    FROM
+      ${ref("penguins")}
+    WHERE
+      body_mass_g IS NOT NULL))

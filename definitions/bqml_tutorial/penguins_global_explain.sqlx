@@ -1,0 +1,9 @@
+config { 
+  type: "table",
+}
+
+#standardSQL
+SELECT
+  *
+FROM
+  ML.GLOBAL_EXPLAIN(MODEL ${ref("penguins_model"))

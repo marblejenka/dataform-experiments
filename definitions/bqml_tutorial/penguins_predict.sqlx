@@ -1,0 +1,17 @@
+config { 
+  type: "table",
+}
+
+#standardSQL
+SELECT
+  *
+FROM
+  ML.PREDICT(MODEL ${ref("penguins_model"),
+    (
+    SELECT
+      *
+    FROM
+      ${ref("penguins")}
+    WHERE
+      body_mass_g IS NOT NULL
+      AND island = "Biscoe"))
