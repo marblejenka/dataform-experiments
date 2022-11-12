@@ -3,6 +3,4 @@ config {
   database: "dataform-demos",
   schema: "dataform_tutorial",
   name: "shopify_orders",
-  description: "Raw CRM customers table"
 }
-select * from dataform-demos.dataform_tutorial.shopify_orders

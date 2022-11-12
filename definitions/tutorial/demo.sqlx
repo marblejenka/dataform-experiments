@@ -1,3 +1,11 @@
+config { 
+  type: "table",
+  bigquery: {
+    partitionBy: "order_date",
+    requirePartitionFilter : false,
+    clusterBy: ["customer_id"],
+  }
+}
 SELECT
   orders.date AS order_date,
   orders.id AS id,

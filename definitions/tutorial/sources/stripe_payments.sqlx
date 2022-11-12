@@ -2,7 +2,5 @@ config {
   type: "declaration",
   database: "dataform-demos",
   schema: "dataform_tutorial",
-  name: "stripe_payments",
-  description: "Raw CRM customers table"
+  name: "shopify_orders",
 }
-select * from dataform-demos.dataform_tutorial.shopify_orders
