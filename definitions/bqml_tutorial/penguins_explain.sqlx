@@ -9,7 +9,7 @@ js {
 SELECT
   *
 FROM
-  ML.EXPLAIN_PREDICT(MODEL ${model_dataset}.${ref("penguins_model")},
+  ML.EXPLAIN_PREDICT(MODEL `${ref("penguins_model")}`},
     (
     SELECT
       *

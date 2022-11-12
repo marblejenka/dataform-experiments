@@ -9,7 +9,7 @@ js {
 SELECT
   *
 FROM
-  ML.PREDICT(MODEL ${model_dataset}.${ref("penguins_model")},
+  ML.PREDICT(MODEL `${ref("penguins_model")}`,
     (
     SELECT
       *

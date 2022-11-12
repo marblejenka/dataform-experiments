@@ -9,7 +9,7 @@ js {
 SELECT
   *
 FROM
-  ML.EVALUATE(MODEL ${model_dataset}.${ref("penguins_model")},
+  ML.EVALUATE(MODEL `${ref("penguins_model")}`,
     (
     SELECT
       *
