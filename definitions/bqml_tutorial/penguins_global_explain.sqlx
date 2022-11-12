@@ -1,9 +1,12 @@
 config { 
   type: "table",
 }
+js {
+  var { model_dataset } = require("includes/bqml_tutorial/constants");
+}
 
 #standardSQL
 SELECT
   *
 FROM
-  ML.GLOBAL_EXPLAIN(MODEL ${ref("penguins_model")})
+  ML.GLOBAL_EXPLAIN(MODEL ${model_dataset}.${ref("penguins_model")})

@@ -2,9 +2,12 @@ config {
   type: "operations",
   hasOutput: true,
 }
+js {
+  var { model_dataset } = require("includes/bqml_tutorial/constants");
+}
 
 #standardSQL
-CREATE OR REPLACE MODEL `bqml_tutorial.${self()}`
+CREATE OR REPLACE MODEL `${model_dataset}.${self()}`
 OPTIONS
   (model_type='linear_reg',
   input_label_cols=['body_mass_g'],
