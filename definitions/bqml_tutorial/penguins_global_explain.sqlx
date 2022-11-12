@@ -6,4 +6,4 @@ config {
 SELECT
   *
 FROM
-  ML.GLOBAL_EXPLAIN(MODEL ${ref("penguins_model"))
+  ML.GLOBAL_EXPLAIN(MODEL ${ref("penguins_model")})

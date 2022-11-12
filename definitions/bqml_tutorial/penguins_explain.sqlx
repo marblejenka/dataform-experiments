@@ -6,7 +6,7 @@ config {
 SELECT
   *
 FROM
-  ML.EXPLAIN_PREDICT(MODEL ${ref("penguins_model"),
+  ML.EXPLAIN_PREDICT(MODEL ${ref("penguins_model")},
     (
     SELECT
       *

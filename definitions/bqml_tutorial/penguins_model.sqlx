@@ -1,9 +1,10 @@
 config { 
-  type: "operations"
+  type: "operations",
+  hasOutput: true,
 }
 
 #standardSQL
-CREATE OR REPLACE MODEL `bqml_tutorial.penguins_model`
+CREATE OR REPLACE MODEL `bqml_tutorial.${self()}`
 OPTIONS
   (model_type='linear_reg',
   input_label_cols=['body_mass_g'],
