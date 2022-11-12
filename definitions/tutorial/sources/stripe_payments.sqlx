@@ -2,5 +2,5 @@ config {
   type: "declaration",
   database: "dataform-demos",
   schema: "dataform_tutorial",
-  name: "shopify_orders",
+  name: "stripe_payments",
 }
