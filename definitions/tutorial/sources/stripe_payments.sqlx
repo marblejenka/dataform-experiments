@@ -5,3 +5,4 @@ config {
   name: "stripe_payments",
   description: "Raw CRM customers table"
 }
+select * from dataform-demos.dataform_tutorial.shopify_orders
