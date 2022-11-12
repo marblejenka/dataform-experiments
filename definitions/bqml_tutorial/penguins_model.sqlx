@@ -2,9 +2,6 @@ config {
   type: "operations",
   hasOutput: true,
 }
-js {
-  var { model_dataset } = require("includes/bqml_tutorial/constants");
-}
 
 #standardSQL
 CREATE OR REPLACE MODEL ${self()}

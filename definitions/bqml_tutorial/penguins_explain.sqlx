@@ -1,9 +1,6 @@
 config { 
   type: "table",
 }
-js {
-  var { model_dataset } = require("includes/bqml_tutorial/constants");
-}
 
 #standardSQL
 SELECT
