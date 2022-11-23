@@ -1,9 +1,7 @@
 config { 
   type: "operations",
   hasOutput: true,
-}
-js {
-  const model_name = `${self().slice(1, -1)}_${constants.execution_time}`;
+  name: "penguins_model_${constants.execution_time}"
 }
 
 #standardSQL
