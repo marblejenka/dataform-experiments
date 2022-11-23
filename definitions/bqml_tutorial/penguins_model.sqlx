@@ -1,7 +1,7 @@
 config { 
   type: "operations",
   hasOutput: true,
-  name: "${constants.penguins_model_simple_name}",
+  name: `${constants.penguins_model_simple_name}`,
 }
 
 #standardSQL

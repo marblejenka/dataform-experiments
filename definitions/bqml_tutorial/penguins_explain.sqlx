@@ -7,7 +7,7 @@ SELECT
   ${constants.execution_time} as execution_time,
   *
 FROM
-  ML.EXPLAIN_PREDICT(MODEL ${constants.penguins_model_versioned_name}),
+  ML.EXPLAIN_PREDICT(MODEL ${constants.penguins_model_versioned_name},
     (
     SELECT
       *
