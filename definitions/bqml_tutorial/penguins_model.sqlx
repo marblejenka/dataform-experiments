@@ -3,9 +3,7 @@ config {
   hasOutput: true,
 }
 js {
-  const date = new Date();
-  const ts = date.getTime();
-  const model_name = `${self().slice(1, -1)}_${ts}`;
+  const model_name = `${self().slice(1, -1)}_${execution_time}`;
 }
 
 #standardSQL
@@ -33,4 +31,9 @@ prediction_request.json
                 "culmen_depth_mm": 18.4, 
                 "flipper_length_mm": 184.0, 
                 "sex": "FEMALE"}]}
+
+  const date = new Date();
+  const ts = date.getTime();
+
+
 */
