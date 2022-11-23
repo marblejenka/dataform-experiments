@@ -7,4 +7,4 @@ SELECT
   ${constants.execution_time} as execution_time,
   *
 FROM
-  ML.GLOBAL_EXPLAIN(MODEL ${constants.penguins_model_versioned_name})
+  ML.GLOBAL_EXPLAIN(MODEL `${constants.penguins_model_versioned_name}`)
