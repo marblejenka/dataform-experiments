@@ -4,9 +4,10 @@ config {
 
 #standardSQL
 SELECT
+  ${constants.execution_time} as execution_time,
   *
 FROM
-  ML.EVALUATE(MODEL ${ref("penguins_model")},
+  ML.EVALUATE(MODEL ${penguins_model_simple_name}),
     (
     SELECT
       *

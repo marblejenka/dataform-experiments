@@ -1,17 +1,17 @@
 config { 
   type: "operations",
   hasOutput: true,
-  name: "penguins_model_${constants.execution_time}"
+  name: ${penguins_model_simple_name},
 }
 
 #standardSQL
-CREATE OR REPLACE MODEL `${model_name}`
+CREATE OR REPLACE MODEL `${penguins_model_versioned_name}`
 OPTIONS
   (model_type='linear_reg',
   input_label_cols=['body_mass_g'],
   enable_global_explain=TRUE,
   model_registry='vertex_ai',
-  vertex_ai_model_id='penguins_model',
+  vertex_ai_model_id='${penguins_model_simple_name}',
   vertex_ai_model_version_aliases=["${constants.execution_time}"]
   ) AS
 SELECT

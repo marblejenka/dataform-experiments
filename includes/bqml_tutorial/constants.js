@@ -1,4 +1,6 @@
-const model_dataset = "bqml_tutorial";
 const date = new Date();
 const execution_time = date.getTime();
-module.exports = { model_dataset, execution_time};
+const penguins_model_simple_name = "penguins_model";
+const penguins_model_versioned_name = `${penguins_model_simple_name}_${execution_time}`;
+
+module.exports = { execution_time, penguins_model_simple_name, penguins_model_versioned_name};
