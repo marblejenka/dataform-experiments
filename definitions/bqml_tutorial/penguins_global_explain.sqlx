@@ -4,6 +4,7 @@ config {
 
 #standardSQL
 SELECT
+  ${constants.execution_time} as execution_time,
   *
 FROM
   ML.GLOBAL_EXPLAIN(MODEL ${ref("penguins_model")})
