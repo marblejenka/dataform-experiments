@@ -7,7 +7,7 @@ SELECT
   ${constants.execution_time} as execution_time,
   *
 FROM
-  ML.EVALUATE(MODEL ${penguins_model_simple_name}),
+  ML.EVALUATE(MODEL ${constants.penguins_model_versioned_name}),
     (
     SELECT
       *
