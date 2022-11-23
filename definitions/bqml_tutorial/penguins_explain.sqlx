@@ -1,6 +1,9 @@
 config { 
   type: "table",
 }
+js {
+  ref(constants.penguins_model_simple_name)
+}
 
 #standardSQL
 SELECT
